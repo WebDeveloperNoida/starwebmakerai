@@ -13,7 +13,7 @@ function aboutPage() {
         readymade gluten
       </h1>
       <p className="mb-8 leading-relaxed">
-        Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+        Copper mcxvcv cdvdv dvvug try-hard pitchfork pour-over freegan heirloom neutra air
         plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk
         tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard
         chambray.
