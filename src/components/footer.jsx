@@ -4,67 +4,110 @@ import Link from 'next/link'
 function Footer() {
   return (
     <>
-        <div className="flex flex-col items-center justify-center h-[179px]  bg-gray-100 dark:bg-black">
-  <div
-    id="footer-top"
-    className="flex items-center justify-center w-11/12 lg:justify-between"
-  >
-    <img
-      src="star-web-maker-ai-footer-logo.webp"
-      width={160}
-      data-nuxt-img=""
-      srcSet="star-web-maker-ai-footer-logo.webp 1x, star-web-maker-ai-footer-logo.webp 2x"
-      className="hidden lg:block"
-    />
-    <div className="flex items-center justify-center gap-5 text-sm font-normal lg:gap-10 sm:text-base md:text-lg lg:text-md">
-     
-      <Link  href="/" className="text-center">
-        Home
-      </Link>
-
-      <Link href="/about" className="text-center">
-        About Us
-      </Link>
-
-      <Link href="/contact" className="text-center">
-        Contact Us
-      </Link>
-
-      <Link href="/faqs" className="text-center">
-        Faq's
-      </Link>
-
-      <Link href="/career" className="text-center">
-        Career
-      </Link>
-
-      <Link href="/blogs" className="text-center">
-        Blogs
-      </Link>
-
-    </div>
-    <div className="items-center justify-center hidden gap-6 lg:flex">
-      
-      
-      
-     {/* Social Media Icons */}
-      
-     
-    </div>
-  </div>
-
-
-  <div
-    id="footer-bottom"
-    className="flex items-center justify-center w-full sm:w-11/12 mt-4"
-  >
-    <p className="text-[10px] font-normal sm:text-xs md:text-sm lg:text-base">
-      2025 Star Web Maker AI Tools | All Right AI Tools Team.
-    </p>
-  </div>
-
+<footer className="text-gray-600 body-font">
   
-</div>
+  <div className="border-t border-gray-200">
+    <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
+      <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+        <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
+          <label
+            htmlFor="footer-field"
+            className="leading-7 text-md font-bold text-gray-600"
+          >
+          SUBSCRIBE HERE
+          </label>
+          <input
+            placeholder='Enter email address'
+            type="text"
+            id="footer-field"
+            name="footer-field"
+            className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+          SUBSCRIBE NOW
+        </button>
+        
+      </div>
+      <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+        <a className="text-gray-500">
+          <svg
+            fill="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            className="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+          </svg>
+        </a>
+        <a className="ml-3 text-gray-500">
+          <svg
+            fill="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            className="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+          </svg>
+        </a>
+        <a className="ml-3 text-gray-500">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            className="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+          </svg>
+        </a>
+        <a className="ml-3 text-gray-500">
+          <svg
+            fill="currentColor"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={0}
+            className="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+            />
+            <circle cx={4} cy={4} r={2} stroke="none" />
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+  <div className="bg-gray-100">
+    <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p className="text-gray-500 text-sm text-center sm:text-left">
+        © 2025 Star Web Maker AI —
+        <a
+          href="https://www.starwebmaker.com"
+          className="text-gray-600 ml-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+           www.starwebmakerai.com
+        </a>
+      </p>
+      <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
+        Team IT
+      </span>
+    </div>
+  </div>
+</footer>
+
 
     </>
   )

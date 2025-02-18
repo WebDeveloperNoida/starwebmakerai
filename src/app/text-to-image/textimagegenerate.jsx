@@ -1,8 +1,8 @@
 'use client'
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import { Loader } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { Loader, LoaderCircle } from 'lucide-react';
+import MoonLoader  from "react-spinners/MoonLoader";
 
 function Textimagegenerate() {
 
@@ -61,7 +61,15 @@ function Textimagegenerate() {
                         onChange={(event) => setIsPrompt(event.target.value)}
                     />
                 </div>
-                {isLoading ? <Button ><Loader />Generating...</Button> : <Button onClick={handleClick} >Generate</Button>}
+                {isLoading ? <Button className="float: right"> 
+                <MoonLoader
+  color="#fffffa"
+  cssOverride={{}}
+  loading
+  size={21}
+  speedMultiplier={10}
+/>
+                 Generating...</Button> : <Button onClick={handleClick} >Generate</Button>}
             </div>
 
 
