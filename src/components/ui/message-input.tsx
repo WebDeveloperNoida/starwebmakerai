@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { ArrowUp, Paperclip, Square, X } from "lucide-react"
@@ -106,13 +105,13 @@ export function MessageInput({
       return
     }
 
-    const files = Array.from(items)
-      .map((item) => item.getAsFile())
-      .filter((file) => file !== null)
+    // const files = Array.from(items)
+    //   .map((item) => item.getAsFile())
+    //   .filter((file) => file !== null)
 
-    if (props.allowAttachments && files.length > 0) {
-      addFiles(files)
-    }
+    // if (props.allowAttachments && files.length > 0) {
+    //   addFiles(files)
+    // }
   }
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -144,12 +143,12 @@ export function MessageInput({
   const showFileList =
     props.allowAttachments && props.files && props.files.length > 0
 
-  useAutosizeTextArea({
-    ref: textAreaRef,
-    maxHeight: 240,
-    borderWidth: 1,
-    dependencies: [props.value, showFileList],
-  })
+  // useAutosizeTextArea({
+  //   ref: textAreaRef,
+  //   maxHeight: 240,
+  //   borderWidth: 1,
+  //   dependencies: [props.value, showFileList],
+  // })
 
   return (
     <div

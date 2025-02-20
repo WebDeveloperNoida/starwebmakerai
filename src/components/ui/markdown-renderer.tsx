@@ -1,3 +1,4 @@
+
 import React, { Suspense } from "react"
 import Markdown from "react-markdown"
 import remarkGfm from "remark-gfm"
@@ -13,7 +14,7 @@ export function MarkdownRenderer({ children }: MarkdownRendererProps) {
   return (
     <Markdown
       remarkPlugins={[remarkGfm]}
-      components={COMPONENTS}
+      // components={COMPONENTS}
       className="space-y-3"
     >
       {children}
@@ -186,7 +187,8 @@ const COMPONENTS = {
   hr: withClass("hr", "border-foreground/20"),
 }
 
-function withClass(Tag: keyof JSX.IntrinsicElements, classes: string) {
+// keyof JSX.IntrinsicElements
+function withClass(Tag: any, classes: string) {
   const Component = ({ node, ...props }: any) => (
     <Tag className={classes} {...props} />
   )
