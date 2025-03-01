@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import { Resend } from 'resend';
 import subscriberEmailer from "@/components/emails/subscriberEmailer";
 import * as React from 'react';
-const resend = new Resend(process.env.RESEND_API_KEY);
 
+const resend = new Resend("re_2Sf5A8ig_6EWDWLEFqd55iuxDUxrcxM8g");
 
 // app/api/contactform/route.js
 export async function POST(request: any) {
