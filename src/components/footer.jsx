@@ -1,5 +1,8 @@
 
-import Link from 'next/link'
+import SubscriberPage from './subscriber'
+
+
+
 
 function Footer() {
   return (
@@ -8,27 +11,11 @@ function Footer() {
   
   <div className="border-t border-gray-200">
     <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
-      <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
-        <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
-          <label
-            htmlFor="footer-field"
-            className="leading-7 text-md font-bold text-gray-600"
-          >
-          SUBSCRIBE HERE
-          </label>
-          <input
-            placeholder='Enter email address'
-            type="text"
-            id="footer-field"
-            name="footer-field"
-            className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          />
-        </div>
-        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-          SUBSCRIBE NOW
-        </button>
-        
-      </div>
+      
+      
+
+     <SubscriberPage />
+
       <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
         <a className="text-gray-500">
           <svg
