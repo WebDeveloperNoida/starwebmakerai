@@ -12,9 +12,6 @@ function Textimagegenerate() {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(false)
   const [isPrompt, setIsPrompt] = useState("")
-  //    https://api-inference.huggingface.co/models/ZB-Tech/Text-to-Image    Cartoon Image Print Here
-  //    https://api-inference.huggingface.co/models/stable-diffusion-v1-5/stable-diffusion-v1-5
-  //    https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev    Actual Main Print Image
 
 
   const query = async (data) => {
@@ -22,7 +19,7 @@ function Textimagegenerate() {
       "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev",
       {
         headers: {
-          Authorization: process.env.HUGGING_FACE_TOKEN,
+          Authorization: "Bearer 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",
           "Content-Type": "application/json",
         },
         method: "POST",
