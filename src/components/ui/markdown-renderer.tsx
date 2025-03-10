@@ -1,6 +1,6 @@
 
 import React, { Suspense } from "react"
-import Markdown from "react-markdown"
+import ReactMarkdown  from "react-markdown"
 import remarkGfm from "remark-gfm"
 
 import { cn } from "@/lib/utils"
@@ -12,13 +12,13 @@ interface MarkdownRendererProps {
 
 export function MarkdownRenderer({ children }: MarkdownRendererProps) {
   return (
-    <Markdown
+    <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       // components={COMPONENTS}
-      className="space-y-3"
+      // className="space-y-3"
     >
       {children}
-    </Markdown>
+    </ReactMarkdown>
   )
 }
 
