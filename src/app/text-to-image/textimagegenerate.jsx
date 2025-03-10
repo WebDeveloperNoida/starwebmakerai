@@ -136,10 +136,9 @@ function Textimagegenerate() {
         ))}
       </div>
 
-      {
-      localStorage.length > 0 && 
+    
       <Button onClick={clearLocalStorageImages} className="mt-8" variant="destructive">All Clear Generated Images</Button>
-      }
+      
      
     </div>
   )
